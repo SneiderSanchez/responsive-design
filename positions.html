@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Reminder of CSS positions</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .section {
+            border: 1px solid purple;
+            margin: 1em 1em;
+            padding: 0.8em;
+        }
+
+        /* 
+        !=static:
+            -unlock z-index, top, rigth, bottom y left
+
+         relative:
+            -The space of the element always endures, doesnt matter if the element is moving 
+        Absolute:
+            -Moves between the body or the relative positioned parent  
+        Fixed:
+            -Always stay where is placed, doesnt matter scroll 
+        Sticky:
+            -Works like 'catching' the element  
+            */
+        p {
+            font-size: 3em;
+        }
+
+        p span {
+            position: absolute;
+            top: 0;
+        }
+        .responsive{
+            background: red;
+        }
+        .mundo{
+            background: violet;
+            z-index: 10;
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section sticky">
+        <p class="">
+            Hola
+            <span class="mundo">
+                Mundo
+            </span>
+            <span class="responsive">
+                Responsive Design
+            </span>
+        </p>
+    </div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+</body>
+
+</html>
