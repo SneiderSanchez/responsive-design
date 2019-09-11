@@ -343,7 +343,25 @@ figure {
   .container{
     padding: 0 1em;
   }
-
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero-image{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  h1{
+    font-size: 2em;
+    z-index: 2;
+  }
 }
 @media screen and (max-width: 767px){
   .header{
@@ -396,6 +414,7 @@ figure {
   .event img {
     width: 100%;
   }
+
 }
 @media screen and (max-width: 480px){
   .project-details{
@@ -423,10 +442,20 @@ figure {
     text-align: center;
     border: 1px solid transparent;
   }
+  h1{
+    font-size: 1.5em;
+  }
 }
 @media screen and (max-width: 320px){
   .project-details{
     width: auto;
     font-size: 10px;
+  }
+  h1{
+    font-size: 1.2em;
+    /* background: rgba(0, 0, 0, 0.5) */
+  }
+  .hero{
+    padding: 2em 1em;
   }
 }
