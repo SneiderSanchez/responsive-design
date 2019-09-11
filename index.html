@@ -19,13 +19,13 @@
 </head>
 
 <body>
-  <i class="icon-menu burguer-button"></i>
+  <i class="icon-menu burguer-button" id="menu-burguer"></i>
   <header class="header">
     <div class="container">
       <figure class="logo">
         <img src="images/logo.png" height="50" alt="Logo de http://leonidasesteban.com" />
       </figure>
-      <nav class="menu is-active">
+      <nav class="menu">
         <ol>
           <li>
             <a class="link" href="#portafolio">Portafolio</a>
@@ -40,14 +40,15 @@
       </nav>
     </div>
   </header>
-      <section class="hero">
-      <div class="container">
-        <h1>
-          Hola! Soy <strong>Leonidas Esteban</strong> <br/> Desarrollador  <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
-        </h1>
-        <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> 
-      </div>
-    </section>
+  <section class="hero">
+    <div class="container">
+      <h1>
+        Hola! Soy <strong>Leonidas Esteban</strong> <br /> Desarrollador <strong>Javascript</strong> con <br> pasión por
+        la <strong>enseñanza</strong>
+      </h1>
+      <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio">
+    </div>
+  </section>
   <section id="portafolio" class="portfolio">
 
     <div class="container">
@@ -87,7 +88,7 @@
     </div>
 
   </section>
-  
+
 
   </video>
   <div class="container">
@@ -99,7 +100,7 @@
       <article class="event">
         <figure class="event-imageContainer">
           <video class="video" src="/video/video_test.mp4" controls>
-          <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" /> -->
+            <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" /> -->
         </figure>
         <div class="event-detail">
           <h3 class="event-title">PlatziConf México 2018</h3>
@@ -110,9 +111,11 @@
       </article>
       <article class="event">
         <figure class="event-imageContainer">
-            <div class="flexible-video">
-                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
+          <div class="flexible-video">
+            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w"
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
           <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" /> -->
         </figure>
         <div class="event-detail">
@@ -173,6 +176,29 @@
       </div>
     </div>
   </footer>
+  <script>
+    document.getElementById('menu-burguer').onclick = () => {
+      const menu = document.getElementsByClassName('menu')[0]
+      if (menu.classList.contains('is-active')) {
+        menu.classList.remove('is-active')
+      } else {
+        menu.classList.add('is-active')
+      }
+      console.log("ajkld")
+    };
+/*     function addMenu(this) {
+          const menu = document.getElementsByClassName('menu')[0]
+          console.log(document.getElementsByClassName('menu')[0])
+    
+          if (menu.classList.contains('is-active')) {
+    
+            menu.classList.remove('is-acive')
+          } else {
+            menu.classList.add('is-acive')
+          }
+        } */
+
+  </script>
 </body>
 
 </html>

@@ -462,8 +462,8 @@ figure {
     background: #1b2127;
     z-index: 3;
     top: 0;
-    left: 0;
-    width: -100vw;
+    left: -100vw;
+    width: 100vw;
     /* height: 100vw; */
     bottom: 0;
     display: flex;
