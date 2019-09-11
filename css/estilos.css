@@ -338,6 +338,11 @@ figure {
   height: inherit;
   flex-wrap: inherit;
 }
+.video{
+  width: 100%;
+  height: auto;
+  /* max-width: 100%; */
+}
 /* desktop first -> Empezar en el media query más grande */
 @media screen and (max-width: 1024px){
   .container{
